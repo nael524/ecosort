@@ -12,9 +12,29 @@ body.dark .navbar {
     background: #111827;
 }
 
+body.dark .badge {
+    color: #0f172a;
+}
+
 body.dark .sidebar {
     background: #111827;
 }
+
+body.dark .sdgs-card {
+    background: #111827;
+}
+
+body.dark .jenis-card {
+    background: #ffffff;
+
+}
+
+body.dark .jenis-card p,
+body.dark .jenis-card h3 {
+    color: #0f172a;
+
+}
+
 
 body.dark .sidebar a {
     color: #fff;
