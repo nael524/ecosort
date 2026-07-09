@@ -16,6 +16,10 @@ body.dark .badge {
     color: #0f172a;
 }
 
+body.dark .container-home {
+    background: #111827;
+}
+
 body.dark .sidebar {
     background: #111827;
 }
