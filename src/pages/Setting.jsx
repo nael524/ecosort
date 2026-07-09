@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from "react";
 import {FaBars,FaTimes,FaMoon,FaSun,FaCamera,FaRobot,FaInfoCircle} from "react-icons/fa";
 import "../styles/Setting.css";
- 
+ import { Link } from "react-router-dom";
 function Setting(){
 
 const [menuOpen,setMenuOpen]=useState(false);
@@ -46,13 +46,17 @@ onClick={()=>setMenuOpen(!menuOpen)}
 
 </header>
 
-<div className={`sidebar ${menuOpen?"active":""}`}>
+<div className={`sidebar ${menuOpen ? "active" : ""}`}>
 
-<a href="/">Beranda</a>
-<a href="/Beranda">Camera EcoSort</a>
-<a href="/Edukasi">Edukasi</a>
-<a href="/Profil">Profil</a>
-<a href="/Setting">Pengaturan</a>
+    <Link to="/">Beranda</Link>
+
+    <Link to="/Beranda">Camera EcoSort</Link>
+
+    <Link to="/Edukasi">Edukasi</Link>
+
+    <Link to="/Profil">Profil</Link>
+
+    <Link to="/Setting">Pengaturan</Link>
 
 </div>
 

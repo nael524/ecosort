@@ -3,7 +3,7 @@ import { FaBars, FaTimes, FaLeaf, FaRecycle, FaGlobeAsia, FaTree, FaSeedling, Fa
 import "../styles/Edukasi.css";
 import { useNavigate } from "react-router-dom";
 import SDGs from "../images/logo1.png";
-
+import { Link } from "react-router-dom";
 function Edukasi() {
     const [menuOpen, setMenuOpen] = useState(false);
 const navigate = useNavigate();
@@ -53,20 +53,19 @@ const navigate = useNavigate();
 
             {/* ================= SIDEBAR ================= */}
 
-            <div className={`sidebar ${menuOpen ? "active" : ""}`}>
+           <div className={`sidebar ${menuOpen ? "active" : ""}`}>
 
-                <a href="/">Beranda</a>
+            <Link to="/">Beranda</Link>
 
-                <a href="/Beranda">Camera EcoSort</a>
+            <Link to="/Beranda">Camera EcoSort</Link>
 
-                <a href="/Edukasi">Edukasi</a>
+            <Link to="/Edukasi">Edukasi</Link>
 
- 
-                <a href="/Profil">Profil</a>
+            <Link to="/Profil">Profil</Link>
 
-                <a href="/Setting">Pengaturan</a>
+            <Link to="/Setting">Pengaturan</Link>
 
-            </div>
+        </div>
 
             {menuOpen && (
                 <div

@@ -3,7 +3,7 @@
     import { FaBars, FaTimes } from "react-icons/fa";
     import "../styles/Beranda.css";
     import Camera from "../components/Camera";
-
+    import { Link } from "react-router-dom";
 
     function Beranda() {
         const navigate = useNavigate();
@@ -26,12 +26,18 @@
                     </button>
                 </header>
 
-                <div className={`sidebar ${menuOpen ? "active" : ""}`}>
-                    <a href="/">Beranda</a>
-                    <a href="/Beranda">Camera Ecosort</a>
-                    <a href="/Edukasi">Edukasi</a>
-                    <a href="/Profil">Profil</a>
-                    <a href="/Setting">Pengaturan</a>
+               <div className={`sidebar ${menuOpen ? "active" : ""}`}>
+
+                    <Link to="/">Beranda</Link>
+
+                    <Link to="/Beranda">Camera EcoSort</Link>
+
+                    <Link to="/Edukasi">Edukasi</Link>
+
+                    <Link to="/Profil">Profil</Link>
+
+                    <Link to="/Setting">Pengaturan</Link>
+
                 </div>
 
                 {menuOpen && (
