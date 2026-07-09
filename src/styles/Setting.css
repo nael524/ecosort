@@ -16,6 +16,39 @@ body.dark .badge {
     color: #0f172a;
 }
 
+body.dark .about-card p {
+    color: #0f172a;
+}
+
+body.dark .info-box p {
+    color: #0f172a;
+
+}
+
+body.dark .developer-section p {
+    color: #0f172a;
+
+}
+
+body.dark .developer-section h3 {
+    color: #0f172a;
+
+}
+
+body.dark .developer-section span {
+    color: #0f172a;
+
+}
+
+body.dark .info-box h4 {
+    color: #0f172a;
+
+}
+
+body.dark .about-card h3 {
+    color: #0f172a;
+}
+
 body.dark .container-home {
     background: #111827;
 }
