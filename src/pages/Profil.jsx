@@ -125,17 +125,17 @@ function Profil (){
             <div className="developer-info">
 
                 <div className="info">
-                    <h4>💻 Pengalaman</h4>
+                    <h4>Pengalaman</h4>
                     <p>Freelance Web Developer & Graphic Designer</p>
                 </div>
 
                 <div className="info">
-                    <h4>🎓 Pendidikan</h4>
+                    <h4>Pendidikan</h4>
                     <p>Universitas Satya Terra Bhinneka</p>
                 </div>
 
                 <div className="info">
-                    <h4>🚀 Spesialisasi</h4>
+                    <h4>Spesialisasi</h4>
                     <p>React JS, UI/UX, Laravel, AI Integration and Android Development</p>
                 </div>
 
@@ -145,22 +145,20 @@ function Profil (){
 >
                 Contact Developer
             </button>
-
+        <button
+        className="contact-btn"
+        onClick={() => navigate("/Beranda")}
+        >
+        Get Started
+        </button>
         </div>
 
     </div>
 
 </div>
-<div className="backdor">
-    <p>EcoSort can help people sort waste more easily and accurately.</p>
-    <img className="gambarAbout4" src={gambarAbout4}/>
-<button
-className="get-started6"
-onClick={() => navigate("/Beranda")}
->
-Get Started
-</button></div>
-        </div>
+ 
+ </div>
+    
     );
 }
 export default Profil;

@@ -885,12 +885,12 @@ button:hover {
 
     .img-profil1 {
         top: 100px;
-        left: 30px;
+        left: -10px;
         position: relative;
     }
 
     .img-profil2 {
-        top: 35px;
+        top: 40px;
         left: -20px;
         position: relative;
     }
