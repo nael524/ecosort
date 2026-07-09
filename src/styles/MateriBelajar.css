@@ -1,0 +1,449 @@
+/* ==========================================
+GOOGLE FONT
+========================================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f5f8fb;
+}
+
+/* ==========================================
+PAGE
+========================================== */
+
+.materi-page {
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background:
+        radial-gradient(circle at top left, #dff7e6 0%, transparent 35%),
+        radial-gradient(circle at bottom right, #d7ecff 0%, transparent 30%),
+        #f5f8fb;
+}
+
+/* ==========================================
+HERO
+========================================== */
+
+.materi-hero {
+
+    padding: 120px 8% 80px;
+
+    text-align: center;
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+.back-btn1 {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background: white;
+
+    color: #159947;
+
+    border: 2px solid #159947;
+
+    padding: 12px 42px;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    margin-bottom: 35px;
+
+}
+
+.back-btn:hover {
+
+    background: #159947;
+
+    color: white;
+
+}
+
+.badge {
+
+    display: inline-block;
+
+    background: #d8f6e3;
+
+    color: #159947;
+
+    padding: 10px 20px;
+
+    border-radius: 40px;
+
+    font-weight: 600;
+
+    margin-bottom: 25px;
+
+}
+
+.materi-hero h1 {
+
+    font-size: 52px;
+
+    color: #1f2937;
+
+    margin-bottom: 20px;
+
+    font-weight: 800;
+
+}
+
+.materi-hero p {
+
+    color: #64748b;
+
+    line-height: 1.9;
+
+    font-size: 17px;
+
+}
+
+/* ==========================================
+GRID
+========================================== */
+
+.materi-grid {
+
+    padding: 20px 8% 90px;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 35px;
+
+}
+
+/* ==========================================
+CARD
+========================================== */
+
+.materi-card {
+
+    background: white;
+
+    border-radius: 24px;
+
+    padding: 35px;
+
+    transition: .35s;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .08);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.materi-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 180px;
+
+    background: rgba(21, 153, 71, .05);
+
+    border-radius: 50%;
+
+    right: -70px;
+
+    top: -70px;
+
+}
+
+.materi-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .15);
+
+}
+
+.materi-card svg {
+
+    font-size: 60px;
+
+    color: #159947;
+
+    margin-bottom: 25px;
+
+}
+
+.materi-card h2 {
+
+    font-size: 24px;
+
+    margin-bottom: 18px;
+
+    color: #1e293b;
+
+}
+
+.materi-card p {
+
+    color: #64748b;
+
+    line-height: 1.9;
+
+    font-size: 15px;
+
+}
+
+.materi-card ul {
+
+    margin-top: 15px;
+
+    padding-left: 22px;
+
+}
+
+.materi-card li {
+
+    margin-bottom: 12px;
+
+    color: #64748b;
+
+    line-height: 1.8;
+
+}
+
+/* ==========================================
+QUIZ SECTION
+========================================== */
+
+.quiz-section {
+
+    padding: 80px 8%;
+
+    text-align: center;
+
+    background: white;
+
+    margin-top: 20px;
+
+}
+
+.quiz-section h2 {
+
+    font-size: 38px;
+
+    margin-bottom: 18px;
+
+    color: #1f2937;
+
+}
+
+.quiz-section p {
+
+    color: #64748b;
+
+    max-width: 700px;
+
+    margin: auto;
+
+    line-height: 1.9;
+
+}
+
+.quiz-btn {
+
+    margin-top: 35px;
+
+    padding: 16px 45px;
+
+    background: #159947;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 14px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .35s;
+
+}
+
+.quiz-btn:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 30px rgba(21, 153, 71, .35);
+
+}
+
+/* ==========================================
+ANIMATION
+========================================== */
+
+.materi-card {
+
+    animation: fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(40px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+TABLET
+========================================== */
+
+@media(max-width:992px) {
+
+    .materi-hero h1 {
+
+        font-size: 42px;
+
+    }
+
+    .materi-grid {
+
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    }
+
+}
+
+/* ==========================================
+MOBILE
+========================================== */
+
+@media(max-width:768px) {
+
+    .materi-hero {
+
+        padding: 110px 25px 60px;
+
+    }
+
+    .materi-hero h1 {
+
+        font-size: 34px;
+
+    }
+
+    .materi-hero p {
+
+        font-size: 15px;
+
+    }
+
+    .quiz-section h2 {
+
+        font-size: 30px;
+
+    }
+
+    .materi-grid {
+
+        padding: 20px 25px 70px;
+
+        gap: 25px;
+
+    }
+
+    .materi-card {
+
+        padding: 28px;
+
+    }
+
+}
+
+/* ==========================================
+SMALL MOBILE
+========================================== */
+
+@media(max-width:480px) {
+
+    .back-btn1 {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+    .badge {
+
+        font-size: 13px;
+
+    }
+
+    .materi-hero h1 {
+
+        font-size: 28px;
+
+    }
+
+    .quiz-btn {
+
+        width: 100%;
+
+    }
+
+    .materi-card svg {
+
+        font-size: 50px;
+
+    }
+
+    .materi-card h2 {
+
+        font-size: 22px;
+
+    }
+
+}

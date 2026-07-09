@@ -1,0 +1,927 @@
+.title-profil {
+    color: #026F45;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.img-profil {
+    width: 100%;
+    margin-top: 40px;
+    height: 150px;
+    object-fit: cover;
+
+}
+
+.about-text {
+    position: absolute;
+    color: #ffffff;
+    z-index: 1;
+    text-align: justify;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    margin-left: 70px;
+    margin-top: -110px;
+}
+
+.sub-about {
+    color: #026F45;
+    font-weight: bolder;
+    font-size: 23px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.description {
+    color: #555;
+
+    line-height: 1.9;
+    font-weight: normal;
+    font-size: 15px;
+    width: 70%;
+    font-family: "Poppins", sans-serif;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.img-profil1,
+.img-profil2,
+.img-profil3 {
+    width: 20%;
+
+    margin-top: 10px;
+    height: 270px;
+
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.img-profil1 {
+    top: 70px;
+    left: 155px;
+    position: relative;
+}
+
+.img-profil2 {
+
+    left: 120px;
+    position: relative;
+}
+
+.img-profil3 {
+    top: 200px;
+    left: -150px;
+    position: relative;
+}
+
+.profil-about2 {
+    justify-content: right;
+    text-align: right;
+
+}
+
+.sub1 {
+    color: #026F45;
+    font-weight: bolder;
+    font-size: 50px;
+    width: 25%;
+    letter-spacing: -2px;
+    text-align: center;
+    margin-left: 160px;
+    margin-right: 70px;
+    margin-top: -170px;
+}
+
+/* =========================
+   ABOUT ECOSORT
+========================= */
+
+.profil-about3 {
+    width: 100%;
+    margin: 150px auto;
+    padding: 40px;
+
+    background: var(--bg);
+    border-radius: 25px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .08);
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Garis Hijau */
+
+.profil-about3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 7px;
+
+    background: linear-gradient(90deg,
+            #0C522D,
+            #1FA463,
+            #76D977);
+}
+
+/* =========================
+   JUDUL
+========================= */
+
+.profil-about3 h2 {
+    font-size: 40px;
+    color: #0C522D;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.profil-about3 p {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+/* =========================
+   GRID CARD
+========================= */
+
+.about-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 40px;
+
+}
+
+.about-card {
+
+    background: #F8FBF9;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    transition: .35s;
+
+    border: 1px solid #E7F4EC;
+
+}
+
+.about-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 30px rgba(12, 82, 45, .15);
+
+}
+
+.about-card h3 {
+
+    color: #0C522D;
+
+    margin-bottom: 15px;
+
+    font-size: 24px;
+
+}
+
+.about-card p {
+
+    font-size: 15px;
+
+    color: #555;
+
+}
+
+.about-card ul {
+
+    padding-left: 18px;
+
+    line-height: 2;
+
+    color: #555;
+
+}
+
+/* =========================
+   STATISTIK
+========================= */
+
+.stats {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-top: 45px;
+
+}
+
+.stat-card {
+
+    background: #0C522D;
+
+    color: #fff;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    transition: .3s;
+
+}
+
+.stat-card:hover {
+
+    transform: scale(1.05);
+
+}
+
+.stat-card h1 {
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+
+}
+
+.stat-card p {
+
+    color: #fff;
+
+    font-size: 15px;
+
+}
+
+/* =========================
+   CORE VALUE
+========================= */
+
+.core-values {
+
+    margin-top: 50px;
+
+}
+
+.core-values h2 {
+
+    margin-bottom: 25px;
+
+}
+
+.value-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+
+}
+
+.value-card {
+
+    background: #fff;
+
+    border: 2px solid #E7F4EC;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    transition: .3s;
+
+    text-align: center;
+
+}
+
+.value-card:hover {
+
+    background: #0C522D;
+
+    color: #fff;
+
+    transform: translateY(-8px);
+
+}
+
+.value-card h4 {
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+
+}
+
+.value-card p {
+
+    font-size: 14px;
+
+    color: inherit;
+
+}
+
+/* =========================
+   APP INFO
+========================= */
+
+.app-info {
+
+    margin-top: 50px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+.info-box {
+
+    flex: 1;
+
+    min-width: 250px;
+
+    background: #F5F9F7;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    border-left: 6px solid #0C522D;
+
+}
+
+.info-box h3 {
+
+    color: #0C522D;
+
+    margin-bottom: 12px;
+
+}
+
+.info-box p {
+
+    color: #555;
+
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta-box {
+
+    margin-top: 60px;
+
+    background: linear-gradient(135deg, #0C522D, #1FA463);
+
+    color: #fff;
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    text-align: center;
+
+}
+
+.cta-box h2 {
+
+    color: #fff;
+
+    margin-bottom: 20px;
+
+    font-size: 36px;
+
+}
+
+.cta-box p {
+
+    color: #fff;
+
+    font-size: 18px;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+}
+
+.cta-box button {
+
+    background: #fff;
+
+    color: #0C522D;
+
+    border: none;
+
+    padding: 15px 35px;
+
+    border-radius: 40px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.cta-box button:hover {
+
+    transform: scale(1.08);
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+.developer-section {
+
+    margin-top: -90px;
+
+}
+
+.developer-title {
+
+    text-align: center;
+
+    font-size: 40px;
+
+    color: #0C522D;
+
+    margin-bottom: 30px;
+
+}
+
+.developer-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+
+    background: #fff;
+
+    padding: 40px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+
+    transition: .35s;
+
+}
+
+.developer-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.developer-image {
+
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.developer-image img {
+
+    width: 300px;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid #0C522D;
+
+    box-shadow: 0 20px 35px rgba(12, 82, 45, .25);
+
+}
+
+.developer-content {
+
+    flex: 2;
+
+}
+
+.developer-content h3 {
+
+    font-size: 36px;
+
+    color: #0C522D;
+
+    margin-bottom: 8px;
+
+}
+
+.developer-content span {
+
+    display: block;
+
+    color: #1FA463;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+}
+
+.developer-content p {
+
+    color: #555;
+
+    line-height: 1.9;
+
+    text-align: justify;
+
+}
+
+.developer-info {
+
+    margin-top: 30px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+.info {
+
+    background: #F7FBF8;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    border-left: 5px solid #0C522D;
+
+}
+
+.info h4 {
+
+    margin-bottom: 10px;
+
+    color: #0C522D;
+
+}
+
+.info p {
+
+    font-size: 14px;
+
+}
+
+.contact-btn {
+
+    margin-top: 35px;
+
+    background: #0C522D;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 35px;
+
+    border-radius: 40px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: .3s;
+
+}
+
+.contact-btn:hover {
+
+    background: #159957;
+
+    transform: scale(1.05);
+
+}
+
+.backdor {
+    background-color: #026F45;
+    color: white;
+    height: 762px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.backdor p {
+    margin: 0 auto;
+    font-size: 40px;
+    bottom: 0;
+    position: relative;
+    top: 70px;
+    width: 40%;
+    font-weight: bold;
+}
+
+.gambarAbout4 {
+    width: 400px;
+    position: relative;
+    top: 80px;
+    height: 500px;
+}
+
+.get-started6 {
+    position: absolute;
+    left: 45%;
+    bottom: -400%;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 2px solid white;
+    background: #fff;
+    color: #026F45;
+    font-size: 18px;
+
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
+}
+
+@media(max-width:992px) {
+    .get-started6 {
+        position: absolute;
+        left: 30%;
+        bottom: -590%;
+        padding: 10px 30px;
+        border-radius: 50px;
+        border: 2px solid white;
+        background: #fff;
+        color: #026F45;
+        font-size: 18px;
+
+    }
+
+    .backdor {
+        background-color: #026F45;
+        color: white;
+        height: 762px;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+    }
+
+    .backdor p {
+        margin: 0 auto;
+        font-size: 30px;
+        bottom: 0;
+        position: relative;
+        top: 70px;
+        width: 70%;
+        font-weight: bold;
+    }
+
+    .developer-card {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .developer-info {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .developer-content p {
+
+        text-align: center;
+
+    }
+
+}
+
+@media(max-width:768px) {
+    .get-started6 {
+        bottom: -620%;
+    }
+
+    .developer-image img {
+
+        width: 220px;
+
+        height: 220px;
+
+    }
+
+    .developer-title {
+
+        font-size: 30px;
+
+    }
+
+    .developer-content h3 {
+
+        font-size: 28px;
+
+    }
+
+}
+
+@media(max-width:992px) {
+    .get-started6 {
+        bottom: -590%;
+    }
+
+    .stats {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media(max-width:768px) {
+    .get-started6 {
+        bottom: -620%;
+    }
+
+
+    .profil-about3 {
+
+        padding: 25px;
+
+    }
+
+    .profil-about3 h2 {
+
+        font-size: 30px;
+
+    }
+
+    .about-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .stats {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .value-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .app-info {
+
+        flex-direction: column;
+
+    }
+
+    .cta-box h2 {
+
+        font-size: 28px;
+
+    }
+
+}
+
+@media(max-width:480px) {
+    .get-started6 {
+        bottom: -590%;
+    }
+
+    .profil-about3 h2 {
+
+        font-size: 24px;
+
+    }
+
+    .profil-about3 p {
+
+        font-size: 15px;
+
+    }
+
+    .stat-card h1 {
+
+        font-size: 32px;
+
+    }
+
+}
+
+@media(max-width:480px) {
+    .title-profil {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .sub1 {
+        color: #fff;
+        font-weight: bolder;
+        font-size: 20px;
+        width: 25%;
+        letter-spacing: -2px;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 70px;
+        margin-top: -170px;
+    }
+
+
+    .img-profil1,
+    .img-profil2,
+    .img-profil3 {
+        width: 40%;
+
+        margin-top: -20px;
+        height: 150px;
+        margin-left: 10px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .img-profil3 {
+        top: 50px;
+        left: -45px;
+        position: relative;
+    }
+
+    .img-profil1 {
+        top: 100px;
+        left: 30px;
+        position: relative;
+    }
+
+    .img-profil2 {
+        top: 35px;
+        left: -20px;
+        position: relative;
+    }
+
+    .sub-about {
+        color: #026F45;
+        font-weight: bolder;
+        font-size: 23px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .description {
+        color: #555;
+        font-weight: normal;
+        font-size: 15px;
+        text-align: justify;
+        width: 80%;
+        font-family: "Poppins", sans-serif;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .img-profil {
+        margin-top: 20px;
+        height: 120px;
+    }
+
+    .about-text {
+        font-size: 30px;
+        margin-left: 30px;
+        margin-top: -80px;
+    }
+}

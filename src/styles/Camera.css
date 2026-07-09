@@ -1,0 +1,264 @@
+.camera-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background: var(--bg);
+    color: var(--text);
+    box-sizing: border-box;
+}
+
+.camera-box,
+.summary-card,
+.result-card {
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+.titleolos {
+    text-align: center;
+    font-size: 16px;
+
+    font-weight: normal;
+}
+
+.camera-box {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 70vh;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #000;
+}
+
+.camera-video {
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    display: block;
+}
+
+.camera-status {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #16a34a;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: normal;
+}
+
+.camera-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.camera-buttons button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.reset-btn {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.reset-btn:hover {
+    background: red;
+    color: white;
+}
+
+.bounding-box {
+    position: absolute;
+    border: 3px solid red;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.camera-buttons button:disabled {
+    opacity: .5;
+}
+
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+.summary-card {
+    width: 100%;
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 28px;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .08);
+    border: 1px solid #ececec;
+    animation: summaryShow .45s ease;
+}
+
+.summary-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.summary-header h3 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #222;
+}
+
+.summary-header p {
+    margin-top: 8px;
+    color: #777;
+    font-size: 15px;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 18px;
+}
+
+.summary-item {
+    border-radius: 18px;
+    padding: 22px;
+    color: #fff;
+    text-align: center;
+    transition: .35s;
+    cursor: default;
+}
+
+.summary-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .18);
+}
+
+.summary-title {
+    font-size: 15px;
+    font-weight: 600;
+    opacity: .95;
+}
+
+.summary-value {
+    margin-top: 12px;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.total {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.organik {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.anorganik {
+    background: linear-gradient(135deg, #06b6d4, #0891b2);
+}
+
+.b3 {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.kompleks {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+@keyframes summaryShow {
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media(max-width:600px) {
+
+    .camera-page {
+        padding: 5px;
+    }
+
+    .camera-box {
+        width: 100%;
+        height: 70vh;
+        border-radius: 15px;
+    }
+
+    .camera-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.result-area {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.result-card {
+    background: #fafafa;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+@media(max-width:600px) {
+
+    .camera-page {
+        padding: 10px;
+    }
+
+    .titleolos {
+        font-size: 24px;
+    }
+
+    .camera-buttons {
+        gap: 8px;
+    }
+
+    .camera-buttons button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .camera-video {
+        min-height: 300px;
+        object-fit: cover;
+    }
+
+}
