@@ -106,18 +106,7 @@ View Profil
                     </div>
                 </SwiperSlide>
             </Swiper>
-            <div className="btn-group">
-                {activeIndex > 0 && (
-                    <button className="btn-back"
-                        onClick={() => swiperRef.current?.slidePrev()}>
-                        Back
-                    </button>
-                )}
-                {activeIndex < 2 && (
-                    <button className="btn-next" onClick={() => swiperRef.current?.slideNext()}>
-                        Next
-                    </button>)}
-            </div>
+            
 
         </div>
     );
