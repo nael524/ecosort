@@ -25,7 +25,7 @@ function Profil (){
                     <img src={gambarAbout2} alt="User Icon" className="img-profil2" />
                      <img src={gambarAbout3} alt="User Icon" className="img-profil3" />
                </div>
-                    <h1 className="sub1">Eco Sort Membantu anda dalam memilah Sampah</h1>
+                    
                 <div className="profil-about3">
 
     <h2>♻️ Tentang EcoSort</h2>
